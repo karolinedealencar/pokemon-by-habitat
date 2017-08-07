@@ -6,3 +6,21 @@ body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
+
+.pokemon-habitat {
+  padding: 0 1em;
+}
+
+.pokemon-habitat__title {
+  margin-bottom: 0;
+
+  color: #3564AD;
+  font-family: 'Patua One', cursive;
+  font-size: 4em;
+}
+
+.pokemon-habitat__select {
+  padding: .2em 2em;
+  font-size: 1.2em;
+  border: 1px solid gray;
+}
