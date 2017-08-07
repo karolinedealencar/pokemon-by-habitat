@@ -21,15 +21,15 @@ function showHabitats(habitats) {
   $select.insertAdjacentHTML('beforeend', habitatsHTML)
   $select.addEventListener('click', function() {
     if (this.value !== 'select') {
-      listenOptions(this.value)
+      searchPokemons(this.value)
     }
   })
 }
 
-function listenOptions(habitat) {
-  const selectPromise = fetch(`https://pokeapi.co/api/v2/pokemon-habitat/${habitat}`);
+function searchPokemons(habitat) {
+  const pokemonPromise = fetch(`https://pokeapi.co/api/v2/pokemon-habitat/${habitat}`);
 
-  selectPromise
+  pokemonPromise
   .then(data => data.json())
   .then(data => showPokemons(data.pokemon_species));
 }
