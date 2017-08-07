@@ -24,3 +24,28 @@ body {
   font-size: 1.2em;
   border: 1px solid gray;
 }
+
+.pokemon-habitat__select {
+  min-width: 16%;
+  padding: .2em 2em;
+  font-size: 1.2em;
+  border: 1px solid gray;
+}
+
+.pokemon-result__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding-left: 0;
+}
+
+.pokemon-result__item {
+  flex-basis: 10%;
+  margin: 1em;
+  padding: 1em;
+
+  border-radius: 2px;
+  box-shadow: 0px 0px 6px 0px rgba(166, 167, 171, .6);
+  list-style: none;
+}
